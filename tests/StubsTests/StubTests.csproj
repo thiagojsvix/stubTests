@@ -17,6 +17,7 @@
     </PackageReference>
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.7" />
     <PackageReference Include="WireMock.Net" Version="1.5.60" />
     <PackageReference Include="JustEat.HttpClientInterception" Version="4.3.0" />
     <PackageReference Include="xunit" Version="2.9.0" />
@@ -24,6 +25,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\WebAPI\WebAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
